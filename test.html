@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@font-face {
+	font-family: "FourteenSegments";
+	font-style: normal;
+	font-weight: normal;
+	src: url("fourteen-segments.woff") format('woff');
+}
+
+.box {
+	position: relative;
+	background-color: #261015;
+	font-family: "FourteenSegments";
+	font-size: 60px;
+	width: 10em;
+	height: 1.4em;
+        margin-bottom: 1px;
+	white-space: pre;
+	word-spacing: 0.78ex;
+}
+.box .digits {
+	position: absolute;
+	font-weight: 500;
+	top: 0.2em;
+	left: 0.2em;
+	color: #fe0000;
+}
+.box .digits.empty {
+	/*color: #5f5b6c;*/
+	font-weight: normal;
+	color: #3f3b40;
+}
+
+</style>
+</head>
+<body>
+<div class="box">
+<span class="digits empty">#### ########</span>
+<span class="digits">3.145 100'000.00</span>
+</div>
+
+<div class="box">
+<span class="digits empty">### ###</span>
+<span class="digits"> ON OFF</span>
+</div>
+
+<div class="box">
+<span class="digits empty">### ###</span>
+<span class="digits">-20 +20</span>
+</div>
+
+<div class="box">
+<span class="digits empty">### # ###</span>
+<span class="digits">123 &lt; 256</span>
+</div>
+
+<div class="box">
+<span class="digits empty">#############</span>
+<span class="digits">0  0  0  0  0</span>
+</div>
+
+</body>
+</html>
